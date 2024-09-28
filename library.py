@@ -15,3 +15,7 @@ class Library:
         if not self.books[isbn]['borrowed']:
             raise ValueError("Book is not borrowed.")
         self.books[isbn]['borrowed'] = False
+        
+    def view_available_books(self):
+        available_books = [book for book in self.books.values() if not book['borrowed']]
+        return available_books
