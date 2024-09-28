@@ -10,3 +10,8 @@ class Library:
         if self.books[isbn]['borrowed']:
             raise ValueError("Book is already borrowed.")
         self.books[isbn]['borrowed'] = True
+
+    def return_book(self, isbn):
+        if not self.books[isbn]['borrowed']:
+            raise ValueError("Book is not borrowed.")
+        self.books[isbn]['borrowed'] = False
