@@ -11,5 +11,13 @@ def test_borrow_book():
     library = Library()
     library.add_book('978-3-16-148410-0', 'Test Book', 'Author', 2023)
     library.borrow_book('978-3-16-148410-0')
-    assert library.books['978-3-16-148410-0']['borrowed'] is True
+    assert library.books['978-3-16-148410-0'] ['borrowed'] is True
+
+def test_return_book():
+    library = Library()
+    library.add_book('978-3-16-148410-0', 'Test Book', 'Author', 2023)
+    library.borrow_book('978-3-16-148410-0')
+    library.return_book('978-3-16-148410-0')
+    assert library.books['978-3-16-148410-0']['borrowed'] is False
+
 
