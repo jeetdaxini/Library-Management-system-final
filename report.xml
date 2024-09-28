@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="4" time="0.042" timestamp="2024-09-28T16:46:59.709181+05:30" hostname="jeet">
+<testcase classname="test_library" name="test_add_book" time="0.003" />
+<testcase classname="test_library" name="test_borrow_book" time="0.001" />
+<testcase classname="test_library" name="test_return_book" time="0.002" />
+<testcase classname="test_library" name="test_view_available_books" time="0.001" />
+</testsuite></testsuites>
